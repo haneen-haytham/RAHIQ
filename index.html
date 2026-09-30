@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RAHIQ | Find the scent that feels like you</title>
+  <meta name="description" content="RAHIQ is a premium multi-brand perfume retailer. Discover authentic fragrances from the houses you love.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. NAVIGATION -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo">RAHIQ</a>
+
+      <nav class="menu" id="menu" aria-label="Main">
+        <a href="#featured">Shop</a>
+        <a href="#brands">Brands</a>
+        <a href="#find-your-scent">Collections</a>
+        <a href="#why">About</a>
+        <a href="#" class="menu-cart">Cart (0)</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#" class="nav-link">Search</a>
+        <a href="#" class="nav-link nav-cart">Cart</a>
+        <a href="#featured" class="btn btn-dark nav-shop">Shop Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- 2. HERO -->
+    <section class="container">
+      <div class="hero">
+        <div class="hero-text">
+          <h1>Find the scent that feels like you.</h1>
+          <p>Discover signature fragrances from the brands you love — all in one place.</p>
+          <div class="hero-buttons">
+            <a href="#featured" class="btn btn-ivory">Explore Fragrances</a>
+            <a href="#brands" class="brands">Discover Brands  →</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          
+          <img src="images/hero.png" alt="A perfume bottle with a light cap on a dark burgundy backdrop">
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. FEATURED FRAGRANCES -->
+    <section class="section" id="featured">
+      <div class="container">
+        <h2>Featured Fragrances</h2>
+        <p class="intro">Three well-loved scents from three fragrance houses, chosen to start your search.</p>
+
+        <div class="cards">
+          <a href="#" class="card">
+            <div class="card-image"><img src="images/perfume-1.jfif" alt="Dior Sauvage bottle"></div>
+            <p class="card-brand">RAHIQ EDIT 01</p>
+            <h3>VELVET BLOOM</h3>
+            <p class="card-notes">Soft florals · Rose · Clean musk</p>
+            <div class="card-bottom">
+              <span class="card-price">Price available in store</span>
+              <span class="card-arrow" aria-hidden="true">→</span>
+            </div>
+          </a>
+
+          <a href="#" class="card">
+            <div class="card-image"><img src="images/perfume-2.jfif" alt="YSL Libre bottle"></div>
+            <p class="card-brand">RAHIQ EDIT 02</p>
+            <h3>SILVER VEIL</h3>
+            <p class="card-notes">Iris · Violet · Soft Amber</p>
+            <div class="card-bottom">
+              <span class="card-price">Price available in store</span>
+              <span class="card-arrow" aria-hidden="true">→</span>
+            </div>
+          </a>
+
+          <a href="#" class="card">
+            <div class="card-image"><img src="images/perfume-3.jfif" alt="Jo Malone Wood Sage and Sea Salt bottle"></div>
+            <p class="card-brand">RAHIQ EDIT 03</p>
+            <h3>AMBER DUSK</h3>
+            <p class="card-notes">Amber · Cedarwood · Dried Woods</p>
+            <div class="card-bottom">
+              <span class="card-price">Price available in store</span>
+              <span class="card-arrow" aria-hidden="true">→</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. FIND YOUR SCENT -->
+    <section class="section section-beige" id="find-your-scent">
+      <div class="container">
+        <h2>Not sure where to start?</h2>
+        <p class="intro">Pick the mood that sounds most like you.</p>
+
+        <div class="moods">
+          <button class="mood" type="button" aria-pressed="false" data-mood="Romantic">
+            <img src="images/soft.jfif" alt="">
+            <span class="mood-text">
+              <span class="mood-title">Romantic</span>
+              <span class="mood-desc">Soft florals, warm vanilla and a little sweetness.</span>
+            </span>
+          </button>
+
+          <button class="mood" type="button" aria-pressed="false" data-mood="Bold">
+            <img src="images/bold.jfif" alt="">
+            <span class="mood-text">
+              <span class="mood-title">Bold</span>
+              <span class="mood-desc">Deep woods, spice and amber that people remember.</span>
+            </span>
+          </button>
+
+          <button class="mood" type="button" aria-pressed="false" data-mood="Fresh">
+            <img src="images/fresh.jfif" alt="">
+            <span class="mood-text">
+              <span class="mood-title">Fresh</span>
+              <span class="mood-desc">Citrus, sea air and clean woods for everyday wear.</span>
+            </span>
+          </button>
+        </div>
+
+        <p class="mood-result" id="mood-result" aria-live="polite">Choose a mood to begin.</p>
+      </div>
+    </section>
+
+    <!-- 5. SHOP BY BRAND -->
+<section class="section brands-section" id="brands">
+  <div class="container">
+    <div class="brands-layout">
+
+      <!-- Left side -->
+      <div class="brands-intro">
+        <p class="eyebrow">A GOOD PLACE TO FIND YOUR PEOPLE</p>
+
+        <h2>
+          Your favorite
+          <em>fragrance</em>
+          houses.
+        </h2>
+
+        <p class="brands-description">
+          Distinctive worlds, each with its own way of seeing fragrance.
+          Explore the names you know — and perhaps a new favorite.
+        </p>
+
+        <a href="#featured" class="brands-cta">
+          EXPLORE FEATURED FRAGRANCES
+          <span>→</span>
+        </a>
+      </div>
+
+      <!-- Right side -->
+      <ul class="brand-list">
+
+        <li>
+          <a href="#">
+            <span class="brand-name">Dior</span>
+            <span class="brand-description">French couture, unmistakable presence</span>
+            <span class="brand-arrow">↗</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="brand-name">Chanel</span>
+            <span class="brand-description">The art of the unexpected</span>
+            <span class="brand-arrow">↗</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="brand-name">YSL</span>
+            <span class="brand-description">A little audacity, always</span>
+            <span class="brand-arrow">↗</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="brand-name">Tom Ford</span>
+            <span class="brand-description">Modern glamour with an edge</span>
+            <span class="brand-arrow">↗</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="brand-name">Gucci</span>
+            <span class="brand-description">Expressive, vivid, individual</span>
+            <span class="brand-arrow">↗</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="brand-name">Jo Malone London</span>
+            <span class="brand-description">The beauty of unexpected pairings</span>
+            <span class="brand-arrow">↗</span>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</section>
+
+    <!-- 6. WHY RAHIQ -->
+    <section class="section section-beige" id="why">
+      <div class="container">
+        <h2>Why RAHIQ</h2>
+        <div class="values">
+          <div class="value">
+            <h3>Curated selection</h3>
+            <p>Carefully selected fragrances from different brands.</p>
+          </div>
+          <div class="value">
+            <h3>Authentic products</h3>
+            <p>A trustworthy destination for genuine fragrances.</p>
+          </div>
+          <div class="value">
+            <h3>Find your signature</h3>
+            <p>Helping customers discover a fragrance that fits them.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. FINAL CTA -->
+    <section class="container final-wrap">
+      <div class="final">
+        <h2>Your next signature scent is waiting.</h2>
+        <a href="#featured" class="btn btn-ivory">Shop all fragrances →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 8. FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#top" class="logo">RAHIQ</a>
+        <nav class="footer-links" aria-label="Footer">
+          <a href="#featured">Shop</a>
+          <a href="#brands">Brands</a>
+          <a href="#find-your-scent">Collections</a>
+          <a href="#why">About</a>
+          <a href="#">Contact</a>
+        </nav>
+        <div class="footer-links">
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+          <a href="#">Facebook</a>
+        </div>
+      </div>
+      <p class="copyright">© 2026 RAHIQ. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
